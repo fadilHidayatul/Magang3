@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/num1"
+            android:hint="Masukkan Angka Pertama"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"/>
+        <CheckBox
+            android:id="@+id/chk1"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_below="@id/num1"
+            android:id="@+id/num2"
+            android:hint="Masukkan Angka Kedua"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"/>
+        <CheckBox
+            android:id="@+id/chk2"
+            android:layout_below="@id/num1"
+            android:layout_toRightOf="@id/num2"
+            android:layout_marginTop="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/num3"
+            android:layout_below="@id/num2"
+            android:hint="Masukkan Angka Ketiga"
+            android:layout_marginHorizontal="12dp"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"/>
+        <CheckBox
+            android:id="@+id/chk3"
+            android:layout_below="@id/num2"
+            android:layout_toRightOf="@id/num3"
+            android:layout_marginTop="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="12dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnTambah"
+            android:text="+"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnKurang"
+            android:text="-"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnKali"
+            android:text="X"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnBagi"
+            android:text="/"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnClear"
+            android:text="C"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtResult"
+            android:hint="Hasil : "
+            android:textSize="18sp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/hasil"
+            android:layout_width="match_parent"
+            android:text="0"
+            android:textSize="16sp"
+            android:gravity="right"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/txtResult"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
